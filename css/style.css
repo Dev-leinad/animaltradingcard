@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+header{
+    height: 7vh;
+    background-color: #ade421;
+}
+header #header-title{
+    padding: 8px 50px;
+    color: #fff    ;
+    font-weight: 700;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+section.card{
+    width: 30%;
+    min-height: 600px;
+    margin: 10px auto ;
+    /* border: 1px solid ; */
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 4px 5px 8px #c1c1c1;
+
+}
+button{
+    padding: 10px;
+    margin-bottom:20px;
+    margin-left: 16px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkblue;
+    cursor: pointer;
+}
+
+figure{
+    width: 100%;
+    padding: 8px;
+    position: relative;
+    height: 300px;
+}
+
+figure img{
+    width:100%;
+    object-fit: cover ;
+    height: 100%;
+}
+figcaption{
+    position: relative;
+}
+article{
+    margin: 20px 0;
+    padding: 14px;
+
+}
+article h3{
+    font-size: 26px;
+    color:coral
+}
+article p {
+    line-height: 2;
+}
+article p#char{
+    line-height: 1.8;
+    color: rebeccapurple;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+footer{
+    height: 8vh;
+    background-color:darkslategrey;
+    color: #fff;
+     font-size: 18px;
+        text-align: center;
+}
+footer #footer-para {
+    padding: 8px;
+    color: green;
+}
+
+@media screen and (max-width :768px ) {
+    main{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.card{
+        width: 90%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    footer{
+        font-size: 14px;
+    }
+}
